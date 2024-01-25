@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,56 +7,196 @@
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#topico1">História dos computadores</a></li>
+        <li><a href="#topico2">História da Internet</a>
+          <ul>
+            <li><a href="#subtopico2.1">Arpanet e a origem da internet</a></li>
+            <li><a href="#subtopico2.2">Criação do WWW</a></li>
+          </ul>
+        </li>
+        <li><a href="#topico3">Estrutura Cliente-Servidor</a>
+          <ul>
+            <li><a href="#subtopico3.1">O que são <i>Clients</i>?</a></li>
+            <li><a href="#subtopico3.2">O que são <i>Servers</i>?</a></li>
+          </ul>
+        </li>
+        <li><a href="#topico4">Como é uma estrutura básica de um HTML?</a>
+          <ul>
+            <li><a href="#subtopico4.1">Doctype - Definindo o documento</a></li>
+            <li><a href="#subtopico4.2">HEAD</a></li>
+            <li><a href="#subtopico4.3">BODY</a></li>
+          </ul>
+        </li>
+        <li><a href="#topico5">Tags e Atributos</a>
+          <ul>
+            <li><a href="#subtopico5.1">O que são Tags?</a></li>
+            <li><a href="#subtopico5.2">O que são Elementos?</a></li>
+            <li><a href="#subtopico5.3">O que são Atributos</a></li>
+          </ul>        
+        </li>
+        <li><a href="#refs">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <br>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="topico1">História dos computadores</h2>
+    <hr />
+    <small><a href="#inicio">(voltar ao topo)</a></small>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p>A história dos computadores modernos inicia-se em meados de 1944 com a criação de máquinas como <a href="https://pt.wikipedia.org/wiki/Harvard_Mark_I" target="_blank">Harvard Mark I</a>, <a href="https://www.tecmundo.com.br/historia/40576-colossus-heroi-de-guerra-e-um-dos-primeiros-computadores-do-mundo.htm" target="_blank">Colossus</a> e <a href="https://tecnoblog.net/especiais/eniac-primeiro-computador-do-mundo-completa-65-anos/" target="_blank">ENIAC</a>, criadas com a finalidade de realizar grandes quantidades de cálculos matemáticos complexos e decodificar mensagens trocadas entre soldados durante a Segunda Guerra Mundial. Como características destas máquinas que ficaram conhecidas como primeira geração dos computadores destacam-se a grande quantidade de válvulas e resistores, grande consumo de energia, baixo rendimento e baixa capacidade de processamento.</p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p>De 1959 a 1965 temos a segunda geração de computadores marcada pela substituição das válvulas pelos <a href="https://brasilescola.uol.com.br/fisica/transistor.htm" target="_blank">transistores</a>, dispositivos eletrônicos semicondutores capazes de amplificar ou trocar sinais eletrônicos e potência elétrica, o que possibilitou um aumento considerável na capacidade de processamento, dimensões um pouco menores e menor consumo de energia. É também nesse momento em que os computadores começam a ser utilizados comercialmente, por companhias.</p>
+    
+    <p>Os computadores da terceira geração (1965-1975), por sua vez, funcionavam por <a href="https://blogmasterwalkershop.com.br/eletronica/componentes-ativos-circuito-integrado#:~:text=O%20circuito%20integrado%20(ou%20CI,%2C%20diodos%2C%20resistores%20e%20capacitores." target="_blank">circuitos integrados</a>. Esses substituíram os transistores e já apresentavam uma dimensão menor e maior capacidade de processamento. Foi nesse período que os chips foram criados e a utilização de computadores pessoais começou.</p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p>Com o desenvolvimento da tecnologia da informação, os computadores diminuem de tamanho, aumentam a velocidade e capacidade de processamento de dados. A partir de 1975 temos então a quarta geração de computadores. São incluídos os <a href="https://conceitos.com/microprocessador/" target="_blank">microprocessadores</a> com gasto cada vez menor de energia. Nesse período, mais precisamente a partir da década de 90, há uma grande expansão dos computadores pessoais. Além disso, surgem os softwares integrados e a partir da virada do milênio, começam a surgir os computadores de mão. Ou seja, os smartphones, iPod, iPad e tablets, que incluem conexão móvel com navegação na web.</p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <p>Alguns estudiosos preferem acrescentar uma “Quinta Geração de Computadores” demarcada pelo desenvolvimento da <a href="https://cloud.google.com/learn/what-is-artificial-intelligence?hl=pt-br#:~:text=A%20intelig%C3%AAncia%20artificial%20(IA)%20%C3%A9,fazer%20recomenda%C3%A7%C3%B5es%20e%20muito%20mais." target="_blank">Inteligência Artificial (IA)</a>, do surgimento dos <a href="https://www.infomoney.com.br/guias/criptoativos/" target="_blank">criptoativos</a>, das transações via <a href="https://aws.amazon.com/pt/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc" target="_blank"><i>blockchain</i></a>, do fenômeno do <a href="https://www.alura.com.br/artigos/big-data?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=687448474447&hsa_src=g&hsa_tgt=aud-928600393623:dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAqsitBhDlARIsAGMR1RgqhDtkC5z8ctDbdrsXUQCxOPEglqCUR3JQeJytpGD1rm3HXjUHTGgaAuIKEALw_wcB" target="_blank"><i>Big Data</i></a> e dos supercomputadores, capazes de processar e armazenar grandes volumes de dados. Nessa geração, é possível avaliar a evolução da tecnologia multimídia, da robótica e da internet.</p>
+
+    <h2 id="topico2">História da Internet</h2>
+    <hr />
+    <small><a href="#inicio">(voltar ao topo)</a></small>
+    
+    <p>A <strong>história da internet</strong> começa no ambiente da Guerra Fria (1945-1991). As duas super potências envolvidas, Estados Unidos e União Soviética, estavam divididas nos blocos socialista e capitalista e disputavam poderes e hegemonias.</p>
+
+    <h3 id="subtopico2.1">Arpanet e a origem da internet</h3>
+
+    <p>Com o intuito de facilitar a troca de informações, pois temiam ataques dos soviéticos, o Departamento de Defesa dos Estados Unidos e a <abbr title="Advanced Research Projects Agency">ARPA</abbr> criaram um sistema de compartilhamento de informações entre pessoas distantes geograficamente, a fim de facilitar as estratégias de guerra.</p>
+
+    <p>Nesse momento, surge o protótipo da primeira rede de internet, a <strong><u>Arpanet (Advanced Research Projects Agency Network)</u></strong>.</p>
+
+    <p>Assim, no dia 29 de outubro de 1969 foi estabelecida a primeira conexão entre a Universidade da Califórnia e o Instituto de Pesquisa de Stanford. Foi um momento histórico, uma vez que o primeiro e-mail foi enviado.</p>
+
+    <div align="center">
+      <i>Uma curiosidade sobre o primeiro e-mail enviado: a mensagem enviada continha a palavra <mark>"LOGIN"</mark>, porém só chegou ao destino as letras <mark>"LO"</mark>.</i>
+    </div>
+
+    <h3 id="subtopico2.2">Criação do WWW</h3>
+
+    <p>Já na década de 90, o cientista, físico e professor britânico Tim Berners-Lee desenvolveu um navegador ou browser, a World Wide Web (www), a Rede Mundial de Computadores - Internet.</p>
+
+    <p>Sua criação é responsável por apresentar ao mundo o modo como utilizamos a internet atualmente. Portanto, apesar de não ter sido o inventor da conexão entre computadores geograficamente distantes (a já citada Arpanet), foi o britânico quem desenvolveu o modelo que acessamos cotidianamente.</p>
+
+    <p>A partir disso, a década de 90 ficou conhecida como o "boom da internet", pois foi quando ela se popularizou pelo mundo.</p>
+
+    <p>Essa popularização aconteceu com o surgimento de novos browsers ou navegadores e o aumento do número de usuários, navegadores da internet.</p>
+
+    <p>Exemplos de navegadores da época:</p>
+
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+      <li>WorldWideWeb</li>
+      <li>Mosaic</li>
+      <li>Netscape</li>
+      <li>Internet Explorer</li>
     </ul>
 
+    <p>Diante disso, ocorreu uma grande proliferação de sites, chats, redes sociais, como Orkut, Facebook, MSN e Twitter, tornando a internet a rede ou teia global de computadores conectados.</p>
+
+    <p>Alguns estudiosos acreditam que a Internet foi um marco importante e decisivo na evolução tecnológica. Isso porque ultrapassou barreiras ao aproximar pessoas, culturas, mundos e informações.</p>
+
+    <p>Além disso, várias companhias encontraram na Internet um ambiente propício para a comercialização de produtos e serviços. Isso foi possível devido ao grande tráfego de usuários diariamente e a possibilidade de monitorar seus dados e conteúdos consumidos. Assim surgiram os primeiros <i>ecommerces</i>.</p>
+
+    <h2 id="topico3">Estrutura Cliente-Servidor</h2>
+    <hr />
+    <small><a href="#inicio">(voltar ao topo)</a></small>
+
+    <p>A estrutura cliente-servidor é um modelo de arquitetura de rede amplamente utilizado em ambientes de TI. Nesta abordagem, os computadores são divididos em dois grupos: servidores, que fornecem serviços ou recursos, e clientes, que solicitam estes serviços e recursos, recebendo-os como respostas.</p>
+
+    <p>A comunicação entre os dois é feita por meio de protocolos de rede, como TCP/IP, e é geralmente realizada pela internet ou por uma rede privada. Assim, o modelo é altamente escalável, flexível e seguro, o que permite as empresas distribuírem seus serviços e recursos em vários dispositivos e plataformas.</p>
+
+    <p>Essa estrutura oferece várias vantagens, como escalabilidade, segurança e confiabilidade, tornando-se uma escolha popular para implementações de rede em grande escala.</p>
+
+    <p>Além disso, com uma ampla gama de componentes, incluindo redes, protocolos de comunicação, servidores, clientes e bancos de dados, a estrutura cliente-servidor fornece um ambiente personalizável para atender às necessidades de diferentes empresas.</p>
+
+    <h3 id="subtopico3.1">O que são <i>Clients</i>?</h3>
+
+    <p>Em uma infraestrutura cliente-servidor, cliente é um dispositivo de computação, como desktops, laptops, smartphones, tablets ou aplicativos que, através de protocolos de rede se conectam a servidores para fazer uma solicitação de serviço ou recurso e aguarda a resposta.</p>
+
+    <h3 id="subtopico3.2">O que são <i>Servers</i>?</h3>
+    
+    <p>Já o servidor é o componente do sistema que fornece os serviços ou recursos solicitados pelos clientes. Estes servidores podem ser um computador projetado especificamente para gerenciar e fornecer serviços aos clientes, ou ainda, um software que é executado em um servidor de rede.</p>
+
+    <h2 id="topico4">Como é uma estrutura básica de um HTML?</h2>
+    <hr />
+    <small><a href="#inicio">(voltar ao topo)</a></small>
+
+    <p>O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código.</p>
+
+    <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a seguinte estrutura:</p>
+
+    <ul>
+      <li>Definição do documento (doctype)</li>
+      <li>Cabeça (head)</li>
+      <li>Corpo (body)</li>
+    </ul>
+
+    <h3 id="subtopico4.1">Doctype - Definindo o documento</h3>
+
+    <p>O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</p>
+
+    <h3 id="subtopico4.2">HEAD</h3>
+
+    <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag <code>head</code>.</p>
+
+    <h3 id="subtopico4.3">BODY</h3>
+
+    <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento.</p>
+
+    <p>Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.</p>
+
+    <p>Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p>
+
+    <h2 id="topico5">Tags e Atributos</h2>
+    <hr />
+    <small><a href="#inicio">(voltar ao topo)</a></small>
+
+    <h3 id="subtopico5.1">O que são Tags?</h3>
+
+    <p>Tags são o conjunto de caracteres que formam um elemento.</p>
+
+    <p>Existem dois tipos de Tags, as que necessitam de fechamento e as que não necessitam de fechamento.</p>
+
+    <p>Para as que necessitam de fechamento, utilizamos o sinal de menor ( < ), seguido do nome do elemento e o sinal de maior ( > ) para abertura. Para fechamento, utilizamos o sinal de menor ( < ), seguido de barra ( / ), nome do elemento e o sinal de maior ( > ).</p>
+
+    <p>Os elementos que não necessitam de fechamento, também conhecidos como elementos vazios, somente utilizamos o sinal de menor ( < ), seguido do nome do elemento e o sinal de maior ( > ).</p>
+
+    <h3 id="subtopico5.2">O que são Elementos?</h3>
+
+    <p>Elementos são formados a partir de Tags e entre as Tags é que está o conteúdo do Elemento.</p>
+
+    <p>Se quisermos exibir um parágrafo em um site utilizamos a Tag "p" que semanticamente quer dizer que o conteúdo que se espera nesse Elemento é um parágrafo.</p>
+
+    <h3 id="subtopico5.3">O que são Atributos?</h3>
+
+    <p>Atributos são informações que passamos na Tag para que ela se comporte da maneira esperada. Existem atributos globais (que funcionam em todas as Tags) e específicos (que são direcionados para cada Tag, através de especificação).</p>
+
+    <p>Os Atributos possuem nome e um valor, existem Atributos que você vai usar praticamente sempre e existem outros que serão mais raros.</p>
+
+    <h4>Exemplos de atributos</h4>
+
+    <ul>
+      <li>accesskey</li>
+      <li>class</li>
+      <li>draggable</li>
+      <li>hidden</li>
+      <li>lang</li>
+      <li>style</li>
+    </ul>
+
+    <h2 id="refs">Links de referências</h2>
+    <hr />
+    <small><a href="#inicio">(voltar ao topo)</a></small>
+    <ul>
+        <li><a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank">História e Evolução dos Computadores</a></li><br>
+        <li><a href="https://www.todamateria.com.br/historia-da-internet/" target="_blank">História da Internet: quem criou e quando surgiu</a></li><br>
+        <li><a href="https://www.controle.net/faq/cliente-servidor-uma-estrutura-para-a-computacao-centralizada" target="_blank">Cliente-Servidor, uma estrutura lógica para a computação centralizada</a></li><br>
+        <li><a href="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html" target="_blank">Estrutura básica - Iniciando o código básico de HTML</a></li><br>
+        <li><a href="https://tableless.github.io/iniciantes/manual/html/oquetags.html" target="_blank">O que são Tags, Elementos e Atributos?</a></li>
+    </ul>
 </body>
 </html>
